@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://img.icons8.com/fluency/2x/calculator.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="theme">
+        <button class="btn dark" type="button" >Dark</button>
+        <button class="btn light" type="button">Light</button>
+    </div>
+    <div class="wrapper">
+        <h1 class="title">Kreditni kalkulator</h1>
+        <form id="loan-form">
+            <div class="wrapp-input">
+                <span class="icon euro">&#x20AC;</span>
+                <input type="number" id="amount" class="input" placeholder="Iznos pozajmice">
+            </div>
+            <div class="wrapp-input">
+                <span class="icon percent">&#x25;</span>
+                <input type="number" id="interest" class="input" placeholder="Godisnja kamata">
+            </div>
+            <div class="wrapp-input">
+                <input type="number" id="year" class="input" placeholder="Broj godina otplate duga" >
+            </div>
+            <div class="wrapp-input">
+                <input type="submit" value="Izračunaj" id="calculate">
+            </div>
+        </form>
+        <!-- LOADER -->
+        <div id="loading">
+            <img src="https://cdn.pixabay.com/animation/2022/07/29/03/42/03-42-07-846_512.gif" alt="loading">
+        </div>
+        <div class="results">
+            <h3 class="title-results">Results</h3>
+            <div class="wrapp-input">
+                <div class="icon input-name">Mesečna rata</div>
+                <input type="" readonly id="monthly-payment" class="input-results">
+            </div>
+            <div class="wrapp-input">
+                <div class="icon input-name">Iznos duga</div>
+                <input type="" readonly id="total-payment" class="input-results">
+            </div>
+            <div class="wrapp-input">
+                <div class="icon input-name">Kamata</div>
+                <input type="" readonly id="total-interest" class="input-results">
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+    
+</body>
+</html>
